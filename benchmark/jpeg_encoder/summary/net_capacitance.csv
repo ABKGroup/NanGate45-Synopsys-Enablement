@@ -1,0 +1,11 @@
+DESIGN,PEX1,PEX2,CC1,CC2,R2,mean_ad,max_ad,min_cap,mean_cap,std_cap,max_cap
+jpeg_encoder,QTS,STRC,true,true,0.9956,0.0625,4.6485,0.0000,0.7075,2.1142,84.1995
+jpeg_encoder,FC,INVS,false,false,0.9923,0.0447,8.7370,0.0000,0.6988,2.2486,86.4100
+jpeg_encoder,STRC,QTS,true,true,0.9952,0.0625,4.6485,0.0000,0.7075,2.1142,84.1995
+jpeg_encoder,INVS,FC,false,false,0.9929,0.0447,8.7370,0.0000,0.6988,2.2486,86.4100
+jpeg_encoder,INVS,FC,false,false,0.9929,0.0447,8.7370,0.0000,0.6988,2.2486,86.4100
+jpeg_encoder,INVS,FC,true,true,0.9925,0.0424,9.0340,0.0000,0.6965,2.2423,86.4090
+jpeg_encoder,FC,INVS,false,false,0.9923,0.0447,8.7370,0.0000,0.6988,2.2486,86.4100
+jpeg_encoder,FC,INVS,true,true,0.9918,0.0424,9.0340,0.0000,0.6965,2.2423,86.4090
+jpeg_encoder,INVS,FC,true,true,0.9925,0.0424,9.0340,0.0000,0.6965,2.2423,86.4090
+jpeg_encoder,FC,INVS,true,true,0.9918,0.0424,9.0340,0.0000,0.6965,2.2423,86.4090

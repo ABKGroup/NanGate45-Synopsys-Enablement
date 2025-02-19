@@ -1,0 +1,11 @@
+DESIGN,PEX1,PEX2,CC1,CC2,R2,mean_ad,max_ad,min_cap,mean_cap,std_cap,max_cap
+aes_cipher_top,FC,INVS,true,true,0.9968,0.0827,3.6560,0.0000,1.7495,2.8596,65.9760
+aes_cipher_top,INVS,FC,true,true,0.9968,0.0827,3.6560,0.0000,1.7495,2.8596,65.9760
+aes_cipher_top,INVS,FC,false,false,0.9966,0.0866,3.6660,0.0000,1.7526,2.8648,66.2980
+aes_cipher_top,QTS,STRC,true,true,0.9965,0.0951,3.6592,0.0000,1.7346,2.7814,62.9673
+aes_cipher_top,INVS,FC,false,false,0.9966,0.0866,3.6660,0.0000,1.7526,2.8648,66.2980
+aes_cipher_top,STRC,QTS,true,true,0.9964,0.0951,3.6592,0.0000,1.7346,2.7814,62.9673
+aes_cipher_top,INVS,FC,true,true,0.9968,0.0827,3.6560,0.0000,1.7495,2.8596,65.9760
+aes_cipher_top,FC,INVS,true,true,0.9968,0.0827,3.6560,0.0000,1.7495,2.8596,65.9760
+aes_cipher_top,FC,INVS,false,false,0.9967,0.0866,3.6660,0.0000,1.7526,2.8648,66.2980
+aes_cipher_top,FC,INVS,false,false,0.9967,0.0866,3.6660,0.0000,1.7526,2.8648,66.2980

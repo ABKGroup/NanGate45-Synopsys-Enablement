@@ -1,0 +1,11 @@
+DESIGN,PEX1,PEX2,CC1,CC2,R2,mean_ad,max_ad,min_cap,mean_cap,std_cap,max_cap
+ldpc_decoder_mod,STRC,QTS,true,true,0.9958,0.2901,13.0530,0.0000,4.5949,11.0951,248.1490
+ldpc_decoder_mod,FC,INVS,true,true,0.9966,0.2635,13.9100,0.0000,4.5931,11.1492,251.3870
+ldpc_decoder_mod,INVS,FC,false,false,0.9961,0.2704,14.3200,0.0000,4.5967,11.1573,251.8010
+ldpc_decoder_mod,INVS,FC,false,false,0.9961,0.2704,14.3200,0.0000,4.5967,11.1573,251.8010
+ldpc_decoder_mod,FC,INVS,true,true,0.9966,0.2635,13.9100,0.0000,4.5931,11.1492,251.3870
+ldpc_decoder_mod,FC,INVS,false,false,0.9965,0.2704,14.3200,0.0000,4.5967,11.1573,251.8010
+ldpc_decoder_mod,QTS,STRC,true,true,0.9962,0.2901,13.0530,0.0000,4.5949,11.0951,248.1490
+ldpc_decoder_mod,FC,INVS,false,false,0.9965,0.2704,14.3200,0.0000,4.5967,11.1573,251.8010
+ldpc_decoder_mod,INVS,FC,true,true,0.9963,0.2635,13.9100,0.0000,4.5931,11.1492,251.3870
+ldpc_decoder_mod,INVS,FC,true,true,0.9963,0.2635,13.9100,0.0000,4.5931,11.1492,251.3870

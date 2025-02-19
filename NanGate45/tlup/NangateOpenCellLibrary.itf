@@ -1,0 +1,76 @@
+##################################################################
+# Portions Copyright 2022 Synopsys, Inc. All rights reserved.
+# Portions of these TCL scripts are proprietary to and owned
+# by Synopsys, Inc. and may only be used for internal use by
+# educational institutions (including United States government
+# labs, research institutes and federally funded research and
+# development centers) on Synopsys tools for non-profit research,
+# development, instruction, and other non-commercial uses or as
+# otherwise specifically set forth by written agreement with
+# Synopsys. All other use, reproduction, modification, or
+# distribution of these TCL scripts is strictly prohibited.
+##################################################################
+
+TECHNOLOGY=NanGate45
+
+$ Metal Layers
+DIELECTRIC metal10_diel { THICKNESS=2.000 ER=2.5 }
+CONDUCTOR metal10 { THICKNESS=2.000 WMIN=0.800 SMIN=0.800 RPSQ=0.030 }
+
+DIELECTRIC metal9_diel2 { THICKNESS=2.000 ER=2.5 }
+DIELECTRIC metal9_diel { THICKNESS=2.000 ER=2.5 }
+CONDUCTOR metal9 { THICKNESS=2.000 WMIN=0.800 SMIN=0.800 RPSQ=0.030 }
+
+DIELECTRIC metal8_diel2 { THICKNESS=0.820 ER=2.5 }
+DIELECTRIC metal8_diel { THICKNESS=0.800 ER=2.5 }
+CONDUCTOR metal8 { THICKNESS=0.800 WMIN=0.400 SMIN=0.400 RPSQ=0.075 }
+
+DIELECTRIC metal7_diel2 { THICKNESS=0.820 ER=2.5 }
+DIELECTRIC metal7_diel { THICKNESS=0.800 ER=2.5 }
+CONDUCTOR metal7 { THICKNESS=0.800 WMIN=0.400 SMIN=0.400 RPSQ=0.075 }
+
+DIELECTRIC metal6_diel2 { THICKNESS=0.290 ER=2.5 }
+DIELECTRIC metal6_diel { THICKNESS=0.280 ER=2.5 }
+CONDUCTOR metal6 { THICKNESS=0.280 WMIN=0.140 SMIN=0.140 RPSQ=0.210 }
+
+DIELECTRIC metal5_diel2 { THICKNESS=0.290 ER=2.5 }
+DIELECTRIC metal5_diel { THICKNESS=0.280 ER=2.5 }
+CONDUCTOR metal5 { THICKNESS=0.280 WMIN=0.140 SMIN=0.140 RPSQ=0.210 }
+
+DIELECTRIC metal4_diel2 { THICKNESS=0.290 ER=2.5 }
+DIELECTRIC metal4_diel { THICKNESS=0.280 ER=2.5 }
+CONDUCTOR metal4 { THICKNESS=0.280 WMIN=0.140 SMIN=0.140 RPSQ=0.210 }
+
+DIELECTRIC metal3_diel2 { THICKNESS=0.120 ER=2.5 }
+DIELECTRIC metal3_diel { THICKNESS=0.140 ER=2.5 }
+CONDUCTOR metal3 { THICKNESS=0.140 WMIN=0.070 SMIN=0.070 RPSQ=0.250 }
+
+DIELECTRIC metal2_diel2 { THICKNESS=0.120 ER=2.5 }
+DIELECTRIC metal2_diel { THICKNESS=0.140 ER=2.5 }
+CONDUCTOR metal2 { THICKNESS=0.140 WMIN=0.070 SMIN=0.070 RPSQ=0.250 }
+
+DIELECTRIC metal1_diel2 { THICKNESS=0.120 ER=2.5 }
+DIELECTRIC metal1_diel { THICKNESS=0.130 ER=2.5 }
+CONDUCTOR metal1 { THICKNESS=0.130 WMIN=0.070 SMIN=0.065 RPSQ=0.380 }
+
+$ Poly Layer
+DIELECTRIC diel_POLY { THICKNESS=0.120 ER=3.9 }
+DIELECTRIC diel_ACT { THICKNESS=0.250 ER=3.9 }
+CONDUCTOR POLY { THICKNESS=0.271 WMIN=0.045 SMIN=0.045 RPSQ=1.167 }
+
+$ Substrate
+DIELECTRIC field_base_diel { THICKNESS=0.500 ER=11.9 }
+
+$ Vias
+$VIA contact { FROM=metal1 TO=POLY AREA=0.025 RPV=25 }
+$VIA contact { FROM=metal1 TO=ACTIVE AREA=0.025 RPV=25 }
+
+VIA via1 { FROM=metal2 TO=metal1 AREA=0.0049 RPV=5 }
+VIA via2 { FROM=metal3 TO=metal2 AREA=0.0049 RPV=5 }
+VIA via3 { FROM=metal4 TO=metal3 AREA=0.0049 RPV=5 }
+VIA via4 { FROM=metal5 TO=metal4 AREA=0.0196 RPV=3 }
+VIA via5 { FROM=metal6 TO=metal5 AREA=0.0196 RPV=3 }
+VIA via6 { FROM=metal7 TO=metal6 AREA=0.0196 RPV=3 }
+VIA via7 { FROM=metal8 TO=metal7 AREA=0.16 RPV=1 }
+VIA via8 { FROM=metal9 TO=metal8 AREA=0.16 RPV=1 }
+VIA via9 { FROM=metal10 TO=metal9 AREA=0.64 RPV=0.5 }

@@ -1,0 +1,59 @@
+*#################################################################
+* Portions Copyright 2022 Synopsys, Inc. All rights reserved.
+* Portions of these TCL scripts are proprietary to and owned
+* by Synopsys, Inc. and may only be used for internal use by
+* educational institutions (including United States government
+* labs, research institutes and federally funded research and
+* development centers) on Synopsys tools for non-profit research,
+* development, instruction, and other non-commercial uses or as
+* otherwise specifically set forth by written agreement with
+* Synopsys. All other use, reproduction, modification, or
+* distribution of these TCL scripts is strictly prohibited.
+*#################################################################
+
+* Specify block name for parasitic extraction
+BLOCK: __DESIGN__
+
+* Provide technology lef file followed by standard cell and macro lef files. This command can be specified multiple times to provide multiple lef files
+LEF_FILE: ../../../NanGate45/lef/NangateOpenCellLibrary.tech.lef
+LEF_FILE: ../../../NanGate45/lef/NangateOpenCellLibrary.macro.mod.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_128x116.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_128x256.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_128x32.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_256x16.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_256x32.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_256x48.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_256x64.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_32x32.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_512x64.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_64x124.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_64x256.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_64x62.lef
+LEF_FILE: ../../../NanGate45/lef/fakeram45_64x64.lef
+
+
+* Provide def files for macros referenced in TOP_DEF_FILE separated by a space. This command can be specified multiple times to provide multiple def files. If there is only TOP_DEF_FILE, avoid this command 
+* MACRO_DEF_FILE:  <list_of_macro_def_files> 			
+
+TOP_DEF_FILE:  __DEF_FILE__
+TCAD_GRD_FILE: __NXTGRD_FILE__
+MAPPING_FILE: __LAYERMAP__
+
+REDUCTION: NO_EXTRA_LOOPS 
+NETS: *
+EXTRACTION: RC 
+OPERATING_TEMPERATURE: 25
+DPT: NO
+
+NUM_CORES: 16
+
+DENSITY_BASED_THICKNESS: YES
+COUPLE_TO_GROUND: __CC__ 
+
+COUPLING_ABS_THRESHOLD: 3e-15
+COUPLING_REL_THRESHOLD: 0.03
+REDUCTION_MAX_DELAY_ERROR: 1e-14
+
+NETLIST_FORMAT: SPEF 
+NETLIST_FILE: __SPEF_FILE__ 
+STAR_DIRECTORY: __RUN_DIR__
