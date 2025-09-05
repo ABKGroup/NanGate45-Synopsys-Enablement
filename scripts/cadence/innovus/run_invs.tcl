@@ -60,6 +60,10 @@ set init_lef_file "$lefs"
 init_design -setup {WC_VIEW} -hold {BC_VIEW}
 defIn ${DEF_FILE}
 
+set_interactive_constraint_modes [all_constraint_modes -active]
+set_propagated_clock [all_clocks]
+set_clock_propagation propagated
+
 # Use TQuantus.
 setExtractRCMode -effortLevel medium 
 setExtractRCMode -engine postRoute -coupled ${CC}
