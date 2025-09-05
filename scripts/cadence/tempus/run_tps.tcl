@@ -24,6 +24,10 @@ set_top_module ${DESIGN}
 read_spef ${SPEF_FILE}
 read_sdc ${SDC_FILE}
 
+set_interactive_constraint_modes [all_constraint_modes -active]
+set_propagated_clock [all_clocks]
+set_clock_propagation propagated
+
 set_delay_cal_mode -siAware ${SI}
 report_timing
 
