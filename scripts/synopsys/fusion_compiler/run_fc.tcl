@@ -112,6 +112,8 @@ exec rm ${DESIGN}_CC_${CC}.spef_scenario
 
 set_app_options -name time.si_enable_analysis -value ${SI}
 
+set_propagated_clock [all_clocks]
+
 report_timing
 
 save_cap_file ${CAP_EX_DIR}
