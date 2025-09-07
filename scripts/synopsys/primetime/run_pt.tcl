@@ -91,6 +91,7 @@ read_sdc ${SDC_FILE}
 set_units -time 1ns
 #set_units -capacitance 0.001pF
 
+set_propagated_clock [all_clocks]
 
 if { $SI == "true" } {
 	set si_enable_analysis ${SI}
