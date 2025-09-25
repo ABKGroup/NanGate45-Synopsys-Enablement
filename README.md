@@ -248,7 +248,7 @@ The figure below shows the types of timing paths that we extract.
 </div>
 
 ### Environment
-For commercial EDA tools, we tested the tools with the versions below.  
+For commercial EDA tools, we used the versions below.  
 [Cadence]  
 - Innovus: 21.1
 - Quantus: 21.1
