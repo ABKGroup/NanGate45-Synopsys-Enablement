@@ -472,7 +472,7 @@ For commercial EDA tools, we used the versions below.
     <th align="center" rowspan="2">Cadence's PEX ↔ Synopsys's PEX</th>
     <th align="center" rowspan="2">CC</th>
     <th align="center" rowspan="2">R2</th>
-    <th align="center" colspan="3">Normalized Absolute Error</th>
+    <th align="center" colspan="3">Normalized Absolute Difference</th>
   </tr>
   <tr>
     <th align="center">Mean</th>
